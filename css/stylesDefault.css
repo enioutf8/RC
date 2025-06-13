@@ -50,7 +50,10 @@
     opacity: .5;
     border-bottom: 1px solid #ffffff !important;
 }
-
+.line-default-footer {
+ 
+    border-bottom: 1px solid #ffffff !important;
+}
 .line-default {
     border-bottom: 5px solid #ffffff !important;
 }
