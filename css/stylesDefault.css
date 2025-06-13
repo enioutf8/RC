@@ -1,0 +1,93 @@
+.bg-default {
+    background-color: #ffaa08 !important;
+}
+
+.bg-default-blue {
+    background-color: #01314c !important;
+}
+
+.text-color-white {
+    color: #ffffff !important;
+}
+
+.text-default {
+    color: #002842 !important;
+}
+
+.text-yellow-default {
+    color: #ffaa08 !important;
+}
+
+.icon-default {
+    font-size: 1.5em !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.icon-default-out {
+    font-size: 1.5em !important;
+    width: 30px;
+    height: 30px;
+}
+
+.line-bg-default {
+    border-bottom: 2px solid #fdb93c !important;
+}
+
+.line-bg-default-re {
+    border-bottom: 5px solid #fdb93c !important;
+}
+
+.line-bg-default-lg {
+    border-bottom: 10px solid #fdb93c !important;
+}
+
+.line-default-home {
+    opacity: .5;
+    border-bottom: 1px solid #ffffff !important;
+}
+
+.line-default {
+    border-bottom: 5px solid #ffffff !important;
+}
+
+.area-btn-whatsapp {
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    width: 100px;
+    height: 100px;
+}
+
+.btn-whatsapp {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #25D366;
+    z-index: 12;
+}
+
+.btn-whatsapp i {
+    font-size: 2.5em;
+    color: #ffffff;
+
+}
+
+.btn-whatsapp-back {
+    position: absolute;
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #25D366;
+}
+
+/* HOVERS */
+.bg-default:hover {
+    background-color: #fdb93c !important;
+}

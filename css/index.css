@@ -1,0 +1,243 @@
+ .navbar-custom {
+     backdrop-filter: blur(8px) !important;
+     background-color: #031a27b9;
+     font-size: 1.1em !important;
+ }
+
+ .logo {
+     width: 250px;
+     overflow: hidden;
+ }
+
+ .logo img {
+     width: 80%;
+ }
+
+ .area-form-banner-home {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     color: #fff;
+ }
+
+ .area-left,
+ .area-right {
+     width: 50%;
+     height: 600px;
+ }
+
+ .area-home-options {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .area-home-options li {
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     color: #fff;
+     list-style: none;
+ }
+
+ .area-home-options li span {
+     margin-left: 10px;
+ }
+
+ .sub-title {
+     opacity: .7;
+     font-size: 1.3em;
+     text-align: justify;
+ }
+
+ .area-left label {
+     opacity: .7;
+ }
+
+ .bar-current-footer {
+     width: 100%;
+     height: 25px;
+     background-color: #002842 !important;
+ }
+
+ .content-area-services {
+
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+ }
+
+ .area-services {
+     width: 100%;
+     height: max-content;
+     min-height: 800px;
+     background-color: #fff;
+     background-image: url('../imgs/background_services.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }
+
+ .item-service {
+     position: relative;
+     width: 220px !important;
+     height: 330px !important;
+     background-color: #033C60 !important;
+     overflow: hidden;
+     transition: background-color 1s ease;
+     z-index: 0;
+
+     margin: 5px 5px 40px 5px;
+ }
+
+ .img-item-service {
+     position: absolute;
+     z-index: 1;
+     width: 100%;
+ }
+
+ .area-title-service {
+     opacity: 1 !important;
+     height: 80px;
+ }
+
+ .card-body-service {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .content-item-service {
+     position: relative;
+     z-index: 2;
+     color: #e5e5e5;
+     text-align: center;
+     height: 150px;
+ }
+
+ .description-service {
+
+     font-size: .8em;
+     opacity: .8;
+     height: 60px;
+     overflow: hidden;
+     text-align: center !important;
+ }
+
+ .invisible-div {
+     transition: 1s;
+ }
+
+ /* HOVERS*/
+
+ .area-home-options li:hover {
+     background-color: rgba(253, 253, 253, 0.2);
+     cursor: pointer;
+ }
+
+ .item-service:hover {
+     border: none !important;
+     transition: .2s;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+ }
+
+ .item-service:hover .img-item-service {
+     opacity: .5;
+ }
+
+ .item-service:hover .invisible-div {
+     transition: 1s;
+     display: none;
+ }
+
+ .item-service:hover .content-item-service {
+     animation: fadeIn .2s ease-in forwards;
+ }
+
+ .item-service:hover .description-service {
+     height: 220px;
+     opacity: 1;
+     text-align: justify !important;
+ }
+
+ .area-products {
+     width: 100%;
+     min-height: 600px;
+ }
+
+ #carroselProducts {
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     align-items: center;
+ }
+
+ .item-product {
+     position: relative;
+     z-index: 100;
+     width: 580px;
+     height: 400px;
+     overflow: hidden;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+     border-radius: 10px;
+     margin-bottom: 40px;
+ }
+
+ .content-product {
+     position: relative;
+     z-index: 100;
+     display: flex;
+     align-items: center;
+     width: 100%;
+     height: 90%;
+     justify-content: space-between;
+     padding: 20px;
+ }
+
+ .title-product {
+     text-align: left;
+     margin-bottom: 30px;
+     margin-top: 30px;
+ }
+
+ .area-description-product {
+     padding: 20px;
+     text-align: justify;
+     width: 20vw;
+ }
+
+ .area-photo {
+     width: 250px;
+     height: 90%;
+ }
+
+ .area-photo img {
+     width: 100%;
+ }
+
+ .ball-back {
+     position: absolute;
+     width: 290px;
+     height: 290px;
+     border-radius: 50%;
+     background-color: #01304c3a !important;
+     background-color: rgb(255, 255, 255);
+     z-index: 1;
+     top: 50%;
+     left: 30%;
+     transform: translate(-50%, -50%);
+ }
+
+ /* HOVERS */
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
