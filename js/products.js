@@ -83,7 +83,7 @@ const products = [
         id: "3",
         title: "Intelbras FR 10 Preto Black piano Direita/Esquerda",
         brand: "INTELBRAS",
-        tecnicalFixa:`<hr>
+        tecnicalFixa: `<hr>
 
 <div class="product-info">
   <div>
@@ -160,7 +160,7 @@ const products = [
         id: "4",
         title: "Fechadura smart look inteligente xsdts eletrônica Tuya Wifi",
         brand: "XSDTS",
-        tecnicalFixa:`<hr>
+        tecnicalFixa: `<hr>
                 <div class="product-info">
                 <div>
                     <h5>Informações sobre o produto:</h5>
@@ -222,7 +222,7 @@ const products = [
         id: "5",
         title: "Fechadura smart look Digital Inteligente Câmera Eletrônica ",
         brand: "XSDTS",
-        tecnicalFixa:`<hr>
+        tecnicalFixa: `<hr>
                 <div class="product-info">
                 <div>
                     <h5>Informações sobre o produto:</h5>
@@ -264,7 +264,7 @@ const products = [
         id: "6",
         title: "Fechadura NOVA DIGITAL Inteligente Wifi De Sobrepor ",
         brand: "NOVA DIGITAL",
-        tecnicalFixa:`<hr>
+        tecnicalFixa: `<hr>
                 <div class="product-info">
                 <div>
                     <h5>Informações sobre o produto:</h5>
@@ -329,13 +329,16 @@ products.forEach(item => {
             ${item?.description}
             </div>
         </div>
-          <div class="ball-back  "></div>
+          <div class="ball-back"></div>
+       <div data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn-vermais"><button  class="btn btn-lg text-default bg-default">Ver mais</button></div>
     `;
     carroselProduts.appendChild(div);
 
     //modal
+    const btnVermais = div.querySelector('.btn-vermais');
     const contentDiv = div.querySelector('.content-product');
     contentDiv.addEventListener('click', () => handleDataModal(item))
+    btnVermais.addEventListener('click', () => handleDataModal(item))
     //modal
 
     const img = div.querySelector('img');
@@ -351,12 +354,11 @@ products.forEach(item => {
 });
 
 const handleDataModal = (e) => {
-
     areaThumbnail.innerHTML = "";
     titleModal.textContent = e.title;
     modalFichaTecnica.innerHTML = e.tecnicalFixa
     modalDescription.innerHTML = `
-    <br>
+  
     <div><h5>Descrição: </h5>
     ${e.description}
     </div>

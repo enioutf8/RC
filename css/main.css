@@ -34,11 +34,11 @@
      width: 100%;
      height: 60vh;
      background-image: url('../imgs/footer.png');
+     justify-content: space-between;
      background-size: cover;
      background-repeat: no-repeat;
      display: flex;
      color: #fff;
-     justify-content: space-between;
      flex-direction: column;
  }
 

@@ -15,92 +15,128 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./css/bootstrap/css/bootstrap.min.css'>
 </head>
 
+
 <body>
     <header class="bg-default-blue">
 
-        <nav class=" navbar navbar-custom navbar-expand-lg  ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-custom navbar-expand-lg">
             <div class="container">
+
+                <!-- Botão Toggle (aparece no mobile) -->
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-brand logo" href="#">
-                    <img src="./imgs/logo.png" />
+
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="#">
+                    <img src="./imgs/logo.png" alt="Logo" />
+                </a>
+
+                <div class="hidden-obscure"></div>
+
+                <!-- Menu Desktop -->
+                <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active text-color-white" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-color-white" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-color-white" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-color-white" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <div class="icon-default pointer me-2"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="icon-default pointer me-2"><i class="fa-brands fa-facebook"></i></div>
+                        <button class="btn bg-default text-default" type="button"><strong>Whatsapp</strong></button>
+                    </div>
                 </div>
 
-                <div class="offcanvas offcanvas-start text-color-white" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body ">
-                        <ul
-                            class="navbar-nav text-color-white justify-content-start align-items-center flex-grow-1 pe-3">
-                            <li class="nav-item ">
-                                <a class="nav-link text-color-white active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-color-white " href="#">Serviços</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-color-white" href="#">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-color-white" href="#">Contato</a>
-                            </li>
-                        </ul>
-                        <div class="d-flex align-items-center">
-                            <div class="icon-default pointer"><i class="fa-brands fa-instagram"></i></div>
-                            <div class="icon-default pointer"><i class="fa-brands fa-facebook"></i></div>
-                            <button class="btn bg-default text-default" type="submit"><strong>Whatsapp</strong></button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </nav>
+
+        <!-- Offcanvas (aparece no mobile e tablet) -->
+        <div class="offcanvas offcanvas-start d-lg-none " tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start align-items-start flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center mt-3">
+                    <div class="icon-default pointer me-2"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="icon-default pointer me-2"><i class="fa-brands fa-facebook"></i></div>
+                    <button class="btn bg-default text-default" type="button"><strong>Whatsapp</strong></button>
+                </div>
+            </div>
+        </div>
+
+
         <div class="line-bg-default"></div>
-        <br><br>
+        <br class="spacing-home-br"><br>
         <div class="area-form-banner-home container">
-            <div class="area-left">
+            <div class="area-left home-area-left">
                 <h1>Oferecendo serviços de chaveiro com qualidade e segurança!</h1>
                 <p class="sub-title">Estamos sempre prontos para atender você com <br> excelência.</p>
-                <br>
-                <form>
-                    <div class="d-flex justify-content-between">
+                <br class="spacing-home-br">
+
+                <form class="area-form-home">
+                    <div class="input-blocks">
                         <div class="mb-3 w-50">
                             <label for="exampleFormControlInput1" class="form-label">Seu nome</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                                placeholder="Seu nome">
                         </div>
-                        <div style="visibility: hidden;">****</div>
+                        <div style="visibility: hidden;" class="spacing-home-br">****</div>
                         <div class="mb-3 w-50">
                             <label for="exampleFormControlInput1" class="form-label">Whatsapp</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                                placeholder="Whatsapp">
                         </div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3  area-second-inputs">
                         <label for="exampleFormControlInput1" class="form-label">Seu email </label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Seu email">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3  area-second-inputs">
                         <label for="exampleFormControlTextarea1" class="form-label">Deixe uma menssagem</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                            style="resize: none;"></textarea>
+                        <textarea class="form-control" placeholder="Deixe uma menssagem"
+                            id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
                     </div>
-                    <button class="btn btn-lg w-25 bg-default text-default"><i style="margin-right: 5px;"
-                            class="fa-regular fa-envelope  "></i><strong>Enviar</strong></button>
+                    <button class="btn btn-lg bg-default text-default btn-send-home">
+                        <i style="margin-right: 5px;" class="fa-regular fa-envelope  "></i><strong>Enviar</strong>
+                    </button>
                 </form>
             </div>
-            <div class="area-right"></div>
+            <div class="area-right home-area-right"></div>
         </div>
-        <br><br>
-        <div class="container line-default-home"></div>
-        <br>
-        <ul class="container area-home-options ">
+        <br class="spacing-home-br">
+        <br class="spacing-home-br">
+        <div class="container line-default-home spacing-home-br"></div>
+        <br class="spacing-home-br">
+        <ul class="container area-home-options">
             <li class="transition pointer">
                 <i class="icon-default bg-default text-default ">
                     <i class="fa-solid fa-calendar-days "></i>
@@ -123,12 +159,40 @@
             </li>
 
         </ul>
-
     </header>
+
+    <ul class="container area-home-options-mobile">
+
+        <li class="transition pointer">
+            <i class="icon-home-options bg-default text-default ">
+                <i class="fa-solid fa-calendar-days "></i>
+            </i>
+            <div class="text-default"> Solicite seu Orçamento</div>
+
+        </li>
+
+        <li class="transition pointer">
+            <i class="icon-home-options bg-default text-default ">
+                <i class="fa-solid fa-key"></i>
+            </i>
+            <div class="text-default"> Tipos de Serviços</div>
+
+        </li>
+
+        <li class="transition pointer">
+            <i class="icon-home-options bg-default text-default ">
+                <i class="fa-solid fa-users"></i>
+            </i>
+            <div class="text-default"> Nossos Clientes</div>
+        </li>
+
+    </ul>
+
+
     <main>
         <section class="bg-default-blue container-fluid">
             <div class="line-bg-default-re w-100"></div>
-            <div class="line-default w-100"></div>
+            <div class="spacing-home-br line-default w-100"></div>
             <br>
             <div class="container area-form-banner-home text-white">
                 <div class="area-left">A</div>
@@ -151,9 +215,9 @@
             </div>
             <br>
         </section>
-
         <div class="bar-current-footer"></div>
         <div class="line-bg-default-re w-100"></div>
+
         <div class="area-services">
             <div class="container">
                 <br>
@@ -263,7 +327,7 @@
                             <div class="invisible-div"></div>
                             <div class="content-item-service transition">
                                 <div class="area-title-service">
-                                    <h5>Cópias de Chaves</h5>
+                                    <h5>Cópia e Reprodução de Chaves</h5>
                                 </div>
                                 <p class="description-service transition">
                                     Fazemos cópias de chaves residenciais, comerciais, automotivas e especiais, com
@@ -280,7 +344,7 @@
                             <div class="invisible-div"></div>
                             <div class="content-item-service transition">
                                 <div class="area-title-service">
-                                    <h5>Confecção de Chaves</h5>
+                                    <h5>Confecção Rápida e Precisa de Chaves</h5>
                                 </div>
 
                                 <p class="description-service transition">
@@ -298,7 +362,7 @@
                             <div class="invisible-div"></div>
                             <div class="content-item-service transition">
                                 <div class="area-title-service">
-                                    <h5>Abertura de Cofres</h5>
+                                    <h5>Abertura de Cofres com Segurança e Sigilo</h5>
                                 </div>
 
                                 <p class="description-service transition">
@@ -335,16 +399,18 @@
                 </div>
                 <br>
             </div>
-            <br>
-            <h1 class="text-center text-default"><strong>Produtos essenciais do nosso portfólio</strong></h1>
-            <br>
+
         </div>
         <div class="line-bg-default-re w-100"></div>
         <div class="bar-current-footer"></div>
         <br><br>
         <div class="area-products">
+
+            <h1 class="text-center text-default"><strong>Produtos essenciais do nosso portfólio</strong></h1>
+            <br><br>
             <div id="carroselProducts" class="container"> </div>
         </div>
+
 
 
         <div class="area-services">
@@ -352,32 +418,30 @@
             <h1 class="text-center text-default"><strong>Depoimentos dos nossos Clientes</strong></h1>
             <br><br><br>
             <div id="areaDepoiments" class="container ">
-
             </div>
             <br><br><br>
         </div>
-
-
         <div class="bar-current-footer"></div>
         <div class="line-bg-default-re w-100"></div>
-
         <div class="area-before-footer">
             <br> <br> <br>
-            <div class="container area-form-banner-home text-default ">
+            <div class=" area-form-banner-home text-default ">
                 <div class="area-left area-email-footer">
                     <div class=" body-content-email">
                         <div class="back-ground-email">
                             <h3 class="text-center">Precisa de ajuda? <br>Escreva para a gente!</h3>
                             <br>
                             <form>
-                                <div class="d-flex justify-content-between">
+                                <div class="input-blocks">
                                     <div class="mb-3 w-50">
-                                        <input type="email" class="form-control" id="exampleFormControlInput2"
+                                        <label for="exampleFormControlInput1" class="form-label">Seu nome</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
                                             placeholder="Seu nome">
                                     </div>
-                                    <div style="visibility: hidden;">****</div>
+                                    <div style="visibility: hidden;" class="spacing-home-br">****</div>
                                     <div class="mb-3 w-50">
-                                        <input type="email" class="form-control" id="exampleFormControlInput3"
+                                        <label for="exampleFormControlInput1" class="form-label">Whatsapp</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
                                             placeholder="Whatsapp">
                                     </div>
                                 </div>
@@ -440,7 +504,6 @@
             </div>
             <br><br><br>
         </div>
-
     </main>
     <div class="line-bg-default-lg w-100"></div>
 
@@ -461,20 +524,22 @@
                             compromisso com a segurança.
                         </div>
 
-                        <div class="d-flex mt-2">
+                        <div class=" area-icons-footer d-flex mt-2">
                             <div class="icon-footer pointer"> <i class="fa-brands fa-whatsapp"></i></div>
                             <div class="icon-footer  pointer"><i class="fa-brands fa-instagram"></i></div>
                             <div class="icon-footer pointer"><i class="fa-brands fa-facebook"></i></div>
                         </div>
                     </div>
                     <div class="options-navegation-mid">
-                        <div>
-                            <h6>Institucional</h6>
+
+                        <h6>Institucional</h6>
+                        <div class="area-navegation-footer">
                             <div class="links-footer">Home</div>
                             <div class="links-footer">Serviços</div>
                             <div class="links-footer">Sobre</div>
                             <div class="links-footer">Contato</div>
                         </div>
+
                     </div>
                     <div class="options-navegation">
                         <div>
@@ -527,23 +592,20 @@
                         <div class="content-02">
                             <h3 id="titleModal"></h3>
                             <div class="modal-ficha-tecnica"></div>
-                            <br>
-                            <button class="btn btn-lg bg-default text-default">
-                                <strong>Quero Instalar agora</strong>
-                            </button>
                         </div>
                     </div>
-                    <br>
+
                     <div class="modal-description"></div>
+                    <hr>
                 </div>
                 <div class="modal-footer">
+                    <button class="btn btn-lg bg-default text-default btn-install-now">
+                        <strong>Quero Instalar agora</strong>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 
 
 </body>
