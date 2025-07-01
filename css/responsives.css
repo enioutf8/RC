@@ -32,6 +32,19 @@
          width: 270px !important;
      }
 
+     .area-logo-institucional {
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         width: 100%;
+         height: 100%;
+     }
+
+     .area-logo-institucional img {
+         width: 70%;
+     }
+
+
  }
 
 
@@ -106,18 +119,12 @@
          width: 270px !important;
      }
 
-
-
-
      .area-before-footer {
          width: 100%;
          min-height: 600px;
          height: max-content;
 
      }
-
-
-
 
      .back-ground-card {
          margin: 0px auto;
@@ -128,7 +135,6 @@
          margin: 20px;
      }
 
-
      .back-ground-email {
          margin: 0px auto;
          background-image: url("../imgs/email_background.png");
@@ -137,7 +143,6 @@
          height: 400px !important;
          padding: 0px;
          margin: 0px;
-
      }
 
      .area-before-footer {
@@ -246,6 +251,57 @@
          overflow-y: auto;
      }
 
+
+     .area-form-insti {
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         flex-direction: column;
+         width: 100%;
+         height: 90% !important;
+         color: #fff;
+         text-align: center;
+     }
+
+     .area-left-inst {
+         width: 100%;
+         height: 100%;
+         margin: 0 auto;
+
+     }
+
+     .area-right-inst {
+         width: 100%;
+         height: 100%;
+     }
+
+     .area-logo-institucional {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 100%;
+         margin: 20px auto;
+     }
+
+     .area-logo-institucional img {
+         width: 70%;
+     }
+
+     section {
+         height: max-content;
+         background-image: url('../imgs/background_arrows.png');
+         background-size: auto;
+         background-position: right;
+         background-repeat: no-repeat;
+         box-sizing: border-box !important;
+         padding: 0px !important;
+         margin: 0px !important;
+     }
+
+     .sub-title {
+         text-align: justify;
+     }
  }
 
  /* Estilos para celulares */
@@ -784,7 +840,6 @@
      }
 
 
-
      footer {
          width: 100%;
          height: max-content;
@@ -838,5 +893,57 @@
          transform: translateY(10px);
          width: max-content;
          margin: 20px auto !important;
+     }
+
+
+     .area-form-insti {
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         flex-direction: column;
+         width: 100%;
+         height: 90% !important;
+         color: #fff;
+         text-align: center;
+     }
+
+     .area-left-inst {
+         width: 100%;
+         height: 100%;
+         margin: 0 auto;
+
+     }
+
+     .area-right-inst {
+         width: 100%;
+         height: 100%;
+     }
+
+     .area-logo-institucional {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         height: 100%;
+         margin: 20px auto;
+     }
+
+     .area-logo-institucional img {
+         width: 70%;
+     }
+
+     section {
+         height: max-content;
+         background-image: url('../imgs/background_arrows.png');
+         background-size: auto;
+         background-position: right;
+         background-repeat: no-repeat;
+         box-sizing: border-box !important;
+         padding: 0px !important;
+         margin: 0px !important;
+     }
+
+     .sub-title {
+         text-align: justify;
      }
  }

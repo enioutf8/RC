@@ -40,22 +40,35 @@
                 <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active text-color-white" href="#">Home</a>
+                            <a class="nav-link actived text-color-white" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-color-white" href="#">Serviços</a>
+                            <a class="nav-link text-color-white" href="#about">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-color-white" href="#">Sobre</a>
+                            <a class="nav-link text-color-white" href="#services">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-color-white" href="#">Contato</a>
+                            <a class="nav-link text-color-white" href="#products">Produtos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-color-white" href="#contact">Contato</a>
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">
-                        <div class="icon-default pointer me-2"><i class="fa-brands fa-instagram"></i></div>
-                        <div class="icon-default pointer me-2"><i class="fa-brands fa-facebook"></i></div>
-                        <button class="btn bg-default text-default" type="button"><strong>Whatsapp</strong></button>
+                        <a style="text-decoration: none;" target=_blank
+                            href="https://www.instagram.com/ricardochaveiro_/"
+                            class="icon-default pointer me-2 text-white">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a style="text-decoration: none;" target=_blank
+                            href="https://www.facebook.com/ricardo.michel.969?locale=pt_BR"
+                            class="icon-default pointer me-2 text-white">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <button id="btnWhatsapHeader" onclick="btnWhatsappSend()" class="btn bg-default text-default"
+                            type="button"><strong>Whatsapp</strong></button>
                     </div>
                 </div>
 
@@ -104,31 +117,31 @@
                 <form class="area-form-home">
                     <div class="input-blocks">
                         <div class="mb-3 w-50">
-                            <label for="exampleFormControlInput1" class="form-label">Seu nome</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                            <label for="homeNome" class="form-label">Seu nome</label>
+                            <input required="required" type="text" class="form-control" id="homeNome"
                                 placeholder="Seu nome">
                         </div>
                         <div style="visibility: hidden;" class="spacing-home-br">****</div>
                         <div class="mb-3 w-50">
-                            <label for="exampleFormControlInput1" class="form-label">Whatsapp</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Whatsapp">
+                            <label for="homeWhatsapp" class="form-label">Whatsapp</label>
+                            <input type="number" class="form-control" id="homeWhatsapp" placeholder="Whatsapp">
                         </div>
                     </div>
 
                     <div class="mb-3  area-second-inputs">
-                        <label for="exampleFormControlInput1" class="form-label">Seu email </label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Seu email">
+                        <label for="homeEmail" class="form-label">Seu email </label>
+                        <input type="email" class="form-control" id="homeEmail" placeholder="Seu email">
                     </div>
                     <div class="mb-3  area-second-inputs">
-                        <label for="exampleFormControlTextarea1" class="form-label">Deixe uma menssagem</label>
-                        <textarea class="form-control" placeholder="Deixe uma menssagem"
-                            id="exampleFormControlTextarea1" rows="5" style="resize: none;"></textarea>
+                        <label for="homeMensagem" class="form-label">Deixe uma menssagem</label>
+                        <textarea class="form-control" placeholder="Deixe uma menssagem" id="homeMensagem" rows="5"
+                            style="resize: none;"></textarea>
                     </div>
-                    <button class="btn btn-lg bg-default text-default btn-send-home">
-                        <i style="margin-right: 5px;" class="fa-regular fa-envelope  "></i><strong>Enviar</strong>
+                    <button id="btnSendHome" class="btn btn-lg bg-default text-default btn-send-home">
+                        <i style="margin-right: 5px;" class="fa-regular fa-envelope"></i><strong>Enviar</strong>
                     </button>
                 </form>
+
             </div>
             <div class="area-right home-area-right"></div>
         </div>
@@ -190,27 +203,53 @@
 
 
     <main>
-        <section class="bg-default-blue container-fluid">
+        <section id="about" class="bg-default-blue container-fluid">
             <div class="line-bg-default-re w-100"></div>
             <div class="spacing-home-br line-default w-100"></div>
             <br>
-            <div class="container area-form-banner-home text-white">
-                <div class="area-left">A</div>
-                <div class="area-right">
+            <div class="container area-form-insti text-white">
+                <div class="area-left-inst">
+                    <div class="area-logo-institucional">
+                        <img src="./imgs/logo_maior.png" alt="Logo" />
+                    </div>
+                </div>
+                <div class="area-right-inst">
                     <br>
-                    <h1>
+                    <h2 class="spacing-home-br">
                         Serviço de excelência na Grande Natal e região.
-                    </h1>
+                    </h2>
                     <br>
-                    <p class="sub-title ">
-                        Nossa missão é garantir que cada cliente receba um atendimento personalizado e eficiente, sempre
-                        com
-                        foco em resolver suas necessidades da melhor forma possível.
-                    </p>
-                    <p class="sub-title">
-                        Independentemente do tamanho ou complexidade do seu pedido, nossa equipe está preparada para
-                        entregar soluções sob medida, com responsabilidade, dedicação e respeito ao seu tempo.
-                    </p>
+                    <div id="carouselExample" class="carousel slide  " data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="sub-title">
+                                    Com uma base sólida construída ao longo de três gerações da minha família, iniciei
+                                    na profissão
+                                    aos 18 anos, aprendendo com meu tio os segredos e as melhores práticas do ofício.
+                                    Como chaveiro,
+                                    alio esse conhecimento tradicional a técnicas modernas, atuando com paciência,
+                                    precisão e
+                                    persistência em cada atendimento.
+                                    Acredito que a solução eficaz para qualquer problema — por mais complexo que pareça
+                                    — está na
+                                    combinação entre experiência e dedicação. É assim que garanto segurança e
+                                    tranquilidade para os
+                                    meus clientes.
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="sub-title">
+                                    Na profissão de chaveiro, a ética e os valores profissionais são pilares
+                                    fundamentais em cada serviço que realizo. Herdeiro de uma tradição familiar que
+                                    atravessa três gerações, aprendi desde cedo a importância da honestidade, da
+                                    transparência e do sigilo — princípios transmitidos de geração em geração.
+                                    Tenho plena consciência da responsabilidade envolvida quando um cliente confia a mim
+                                    a segurança de sua casa, veículo ou negócio. Por isso, retribuo essa confiança com
+                                    uma conduta profissional impecável e total comprometimento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <br>
@@ -221,7 +260,7 @@
         <div class="area-services">
             <div class="container">
                 <br>
-                <h1 class="text-center text-default"><strong>Nossos Serviços</strong></h1>
+                <h1 id="services" class="text-center text-default"><strong>Nossos Serviços</strong></h1>
                 <br>
                 <div class="content-area-services">
                     <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
@@ -404,8 +443,7 @@
         <div class="line-bg-default-re w-100"></div>
         <div class="bar-current-footer"></div>
         <br><br>
-        <div class="area-products">
-
+        <div id="products" class="area-products">
             <h1 class="text-center text-default"><strong>Produtos essenciais do nosso portfólio</strong></h1>
             <br><br>
             <div id="carroselProducts" class="container"> </div>
@@ -421,7 +459,7 @@
             </div>
             <br><br><br>
         </div>
-        <div class="bar-current-footer"></div>
+        <div id="contact" class="bar-current-footer"></div>
         <div class="line-bg-default-re w-100"></div>
         <div class="area-before-footer">
             <br> <br> <br>
@@ -491,9 +529,16 @@
                             <br>
                             <h6 class="text-center">Acompanhe meu Trabalho</h6>
                             <div class="area-social-footer">
-                                <div class="icon-footer  pointer"><i class="fa-brands fa-instagram"></i>
-                                </div>
-                                <div class="icon-footer pointer"><i class="fa-brands fa-facebook"></i></div>
+                                <a style="text-decoration: none;" target=_blank
+                                    href="https://www.instagram.com/ricardochaveiro_/"
+                                    class="icon-footer text-white  pointer">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a style="text-decoration: none;" target=_blank
+                                    href="https://www.facebook.com/ricardo.michel.969?locale=pt_BR"
+                                    class="icon-footer text-white  pointer">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
                             </div>
                             <div class="text-center">@ricardochaveiro_</div>
                             <br> <br>
@@ -568,8 +613,8 @@
         </div>
     </footer>
 
-    <div class="area-btn-whatsapp flex-position-center">
-        <div class="btn-whatsapp-back flex-position-center pointer pulse"> </div>
+    <div onclick="btnWhatsappSend()" class="area-btn-whatsapp flex-position-center">
+        <div class="btn-whatsapp-back flex-position-center pointer pulse"></div>
         <div class="btn-whatsapp flex-position-center pointer">
             <i class="fa-brands fa-whatsapp"></i>
         </div>
@@ -621,13 +666,24 @@
 <script src='./js/main.js'></script>
 <script src='./js/products.js'></script>
 <script src='./js/depoiments.js'></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="module" src='./js/sendEmails.js'></script>
 <script>
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', function () {
-            document.querySelectorAll('.nav-link').forEach(item => item.classList.remove('active'));
-            this.classList.add('active');
+            document.querySelectorAll('.nav-link').forEach(item => item.classList.remove('actived'));
+            this.classList.add('actived');
         });
     });
+
+
+    function btnWhatsappSend() {
+        const numero = '5584988927683';
+        const message = 'Olá! Tudo bem? Gostaria de solicitar um orçamento.';
+        const link = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
+        window.open(link, '_blank');
+    }
+
 </script>
 
 
