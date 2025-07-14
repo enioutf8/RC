@@ -335,10 +335,13 @@ products.forEach(item => {
     carroselProduts.appendChild(div);
 
     //modal
+
     const btnVermais = div.querySelector('.btn-vermais');
     const contentDiv = div.querySelector('.content-product');
     contentDiv.addEventListener('click', () => handleDataModal(item))
     btnVermais.addEventListener('click', () => handleDataModal(item))
+
+
     //modal
 
     const img = div.querySelector('img');
@@ -354,6 +357,15 @@ products.forEach(item => {
 });
 
 const handleDataModal = (e) => {
+    const product = {
+        title: e?.title,
+        brand: e?.brand,
+        description: e?.description,
+        img: e?.imgs?.[0]
+    }
+
+    localStorage.setItem('product', JSON.stringify(product))
+
     areaThumbnail.innerHTML = "";
     titleModal.textContent = e.title;
     modalFichaTecnica.innerHTML = e.tecnicalFixa

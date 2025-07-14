@@ -644,15 +644,14 @@
                     <hr>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-lg bg-default text-default btn-install-now">
+                    <button onclick="buyService()" id="btnServiceBuy"
+                        class="btn btn-lg bg-default text-default btn-install-now">
                         <strong>Quero Instalar agora</strong>
                     </button>
                 </div>
             </div>
         </div>
     </div>
-
-
 </body>
 
 
@@ -676,15 +675,27 @@
         });
     });
 
-
-    function btnWhatsappSend() {
-        const numero = '5584988927683';
+    const btnWhatsappSend = () => {
+        const numero = '5584988745331';
         const message = 'Olá! Tudo bem? Gostaria de solicitar um orçamento.';
         const link = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
         window.open(link, '_blank');
     }
 
-</script>
+    const buyService = () => {
+        const contextProductSelect = JSON.parse(localStorage.getItem('product'))
+        const numero = '5584988745331';
+        const message = `Olá! Tudo bem? Gostaria de solicitar esse produto:
+https://enioutf8.github.io/RC/imgs/products/ELSYS/Fechadura_Digital_de_Sobrepor_Prata/01.png
+*${contextProductSelect?.title}*
 
+*Marca:* ${contextProductSelect?.brand}
+
+*Sobre o produto:*
+${contextProductSelect?.description.replace(/<[^>]*>/g, '')}`;
+        const link = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
+        window.open(link, '_blank');
+    }
+</script>
 
 </html>
