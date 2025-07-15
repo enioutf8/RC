@@ -150,57 +150,68 @@
         <div class="container line-default-home spacing-home-br"></div>
         <br class="spacing-home-br">
         <ul class="container area-home-options">
-            <li class="transition pointer">
-                <i class="icon-default bg-default text-default ">
-                    <i class="fa-solid fa-calendar-days "></i>
-                </i>
-                <span> Solicite seu Orçamento</span>
-            </li>
 
-            <li class="transition pointer">
-                <i class="icon-default bg-default text-default ">
-                    <i class="fa-solid fa-key"></i>
-                </i>
-                <span> Tipos de Serviços</span>
-            </li>
+            <a class="nav-link text-color-white" href="#contact">
+                <li class="transition pointer">
+                    <i class="icon-default bg-default text-default ">
+                        <i class="fa-solid fa-calendar-days "></i>
+                    </i>
+                    <span> Solicite seu Orçamento</span>
+                </li>
+            </a>
 
-            <li class="transition pointer">
-                <i class="icon-default bg-default text-default ">
-                    <i class="fa-solid fa-users"></i>
-                </i>
-                <span> Nossos Clientes</span>
-            </li>
+            <a class="nav-link text-color-white" href="#services">
+                <li class="transition pointer">
+                    <i class="icon-default bg-default text-default ">
+                        <i class="fa-solid fa-key"></i>
+                    </i>
+                    <span> Tipos de Serviços</span>
+                </li>
+            </a>
 
+            <a class="nav-link text-color-white" href="#depoiments">
+                <li class="transition pointer">
+                    <i class="icon-default bg-default text-default ">
+                        <i class="fa-solid fa-users"></i>
+                    </i>
+                    <span> Nossos Clientes</span>
+                </li>
+            </a>
         </ul>
     </header>
 
     <ul class="container area-home-options-mobile">
 
-        <li class="transition pointer">
-            <i class="icon-home-options bg-default text-default ">
-                <i class="fa-solid fa-calendar-days "></i>
-            </i>
-            <div class="text-default"> Solicite seu Orçamento</div>
+        <a class="nav-link text-color-white" href="#contact">
+            <li class="transition pointer">
+                <i class="icon-home-options bg-default text-default ">
+                    <i class="fa-solid fa-calendar-days "></i>
+                </i>
+                <div class="text-default"> Solicite seu Orçamento</div>
 
-        </li>
+            </li>
+        </a>
 
-        <li class="transition pointer">
-            <i class="icon-home-options bg-default text-default ">
-                <i class="fa-solid fa-key"></i>
-            </i>
-            <div class="text-default"> Tipos de Serviços</div>
+        <a class="nav-link text-color-white" href="#services">
+            <li class="transition pointer">
+                <i class="icon-home-options bg-default text-default ">
+                    <i class="fa-solid fa-key"></i>
+                </i>
+                <div class="text-default"> Tipos de Serviços</div>
 
-        </li>
+            </li>
+        </a>
 
-        <li class="transition pointer">
-            <i class="icon-home-options bg-default text-default ">
-                <i class="fa-solid fa-users"></i>
-            </i>
-            <div class="text-default"> Nossos Clientes</div>
-        </li>
+        <a class="nav-link text-color-white" href="#depoiments">
+            <li class="transition pointer">
+                <i class="icon-home-options bg-default text-default ">
+                    <i class="fa-solid fa-users"></i>
+                </i>
+                <div class="text-default"> Nossos Clientes</div>
+            </li>
+        </a>
 
     </ul>
-
 
     <main>
         <section id="about" class="bg-default-blue container-fluid">
@@ -216,12 +227,12 @@
                 <div class="area-right-inst">
                     <br>
                     <h2 class="spacing-home-br">
-                        Serviço de excelência na Grande Natal e região.
+                        Construindo Confiança, Gerando Valor
                     </h2>
                     <br>
-                    <div id="carouselExample" class="carousel slide  " data-bs-ride="carousel">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item active" data-bs-interval="11000">
                                 <p class="sub-title">
                                     Com uma base sólida construída ao longo de três gerações da minha família, iniciei
                                     na profissão
@@ -237,7 +248,7 @@
                                     meus clientes.
                                 </p>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-bs-interval="11000">
                                 <p class="sub-title">
                                     Na profissão de chaveiro, a ética e os valores profissionais são pilares
                                     fundamentais em cada serviço que realizo. Herdeiro de uma tradição familiar que
@@ -263,8 +274,7 @@
                 <h1 id="services" class="text-center text-default"><strong>Nossos Serviços</strong></h1>
                 <br>
                 <div class="content-area-services">
-                    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        class="card item-service transition pointer">
+                    <div class="card item-service transition pointer">
                         <img class="img-item-service transition" src="./imgs/services/fechadura_eletronica.png">
                         <div class="card-body card-body-service">
                             <div class="invisible-div"></div>
@@ -284,8 +294,7 @@
 
                     </div>
 
-                    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        class="card item-service transition pointer">
+                    <div class="card item-service transition pointer">
                         <img class="img-item-service transition" src="./imgs/services/fechaduras_digitais.png">
 
                         <div class="card-body card-body-service">
@@ -305,8 +314,7 @@
 
                     </div>
 
-                    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        class="card item-service transition pointer">
+                    <div class="card item-service transition pointer">
                         <img class="img-item-service transition" src="./imgs/services/aberturas_de_fechaduras.png">
                         <div class="card-body card-body-service">
                             <div class="invisible-div"></div>
@@ -322,8 +330,7 @@
                         </div>
                     </div>
 
-                    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        class="card item-service transition pointer">
+                    <div class="card item-service transition pointer">
                         <img class="img-item-service transition" src="./imgs/services/troca_fechadura.png">
                         <div class="card-body card-body-service">
                             <div class="invisible-div"></div>
@@ -340,8 +347,7 @@
                         </div>
                     </div>
 
-                    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        class="card item-service transition pointer">
+                    <div class="card item-service transition pointer">
                         <img class="img-item-service transition" src="./imgs/services/troca_segredo.png">
                         <div class="card-body card-body-service">
                             <div class="invisible-div"></div>
@@ -350,17 +356,14 @@
                                     <h5>Troca de segredo de Fechaduras Comum</h5>
                                 </div>
                                 <p class="description-service transition">
-                                    Ao se mudar para um novo apartamento ou residência, a primeira e mais importante
-                                    medida de segurança é trocar o segredo das fechaduras existentes. Pense nisso:
-                                    outras pessoas, como antigos moradores, prestadores de serviço ou até mesmo
-                                    corretores, já tiveram acesso às chaves.
+                                    Ao mudar para um novo imóvel, troque o segredo das fechaduras. Outros, como antigos
+                                    moradores ou prestadores, podem ter tido acesso às chaves.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        class="card item-service transition pointer">
+                    <div class="card item-service transition pointer">
                         <img class="img-item-service transition" src="./imgs/services/copia_chaves.png">
                         <div class="card-body card-body-service">
                             <div class="invisible-div"></div>
@@ -376,8 +379,7 @@
                         </div>
                     </div>
 
-                    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        class="card item-service transition pointer">
+                    <div class="card item-service transition pointer">
                         <img class="img-item-service transition" src="./imgs/services/chaves_confeccao.png">
                         <div class="card-body card-body-service">
                             <div class="invisible-div"></div>
@@ -394,8 +396,7 @@
                         </div>
                     </div>
 
-                    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        class="card item-service transition pointer">
+                    <div class="card item-service transition pointer">
                         <img class="img-item-service transition" src="./imgs/services/aberturas_de_cofre.png">
                         <div class="card-body card-body-service">
                             <div class="invisible-div"></div>
@@ -415,8 +416,7 @@
 
                     </div>
 
-                    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        class="card item-service transition pointer">
+                    <div class="card item-service transition pointer">
                         <img class="img-item-service transition" src="./imgs/services/fechadura_ponto_eletronico.png">
 
                         <div class="card-body card-body-service">
@@ -449,10 +449,8 @@
             <div id="carroselProducts" class="container"> </div>
         </div>
 
-
-
         <div class="area-services">
-            <br>
+            <br id="depoiments">
             <h1 class="text-center text-default"><strong>Depoimentos dos nossos Clientes</strong></h1>
             <br><br><br>
             <div id="areaDepoiments" class="container ">
@@ -463,7 +461,7 @@
         <div class="line-bg-default-re w-100"></div>
         <div class="area-before-footer">
             <br> <br> <br>
-            <div class=" area-form-banner-home text-default ">
+            <div class="container area-form-banner-home text-default ">
                 <div class="area-left area-email-footer">
                     <div class=" body-content-email">
                         <div class="back-ground-email">
@@ -653,7 +651,7 @@
         </div>
     </div>
 </body>
- 
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

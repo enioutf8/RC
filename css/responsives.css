@@ -51,6 +51,10 @@
  /* Estilos para tablets */
  @media (min-width: 577px) and (max-width: 991px) {
 
+     .carousel-item .sub-title {
+         text-align: justify !important;
+     }
+
      .logo {
          width: 150px;
          overflow: hidden;
@@ -91,7 +95,11 @@
      }
 
      .sub-title {
-         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center !important;
+
      }
 
      .home-area-right {
@@ -267,7 +275,6 @@
          width: 100%;
          height: 100%;
          margin: 0 auto;
-
      }
 
      .area-right-inst {
@@ -280,12 +287,12 @@
          justify-content: center;
          align-items: center;
          width: 100%;
-         height: 100%;
+         height: 200px !important;
          margin: 20px auto;
      }
 
      .area-logo-institucional img {
-         width: 70%;
+         width: 50%;
      }
 
      section {
@@ -299,13 +306,14 @@
          margin: 0px !important;
      }
 
-     .sub-title {
-         text-align: justify;
-     }
+
  }
 
  /* Estilos para celulares */
  @media (max-width: 576px) {
+     .carousel-item .sub-title {
+         text-align: justify !important;
+     }
 
      header {
          position: relative;
@@ -383,7 +391,11 @@
      }
 
      .sub-title {
-         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center !important;
+
      }
 
      .home-area-right {
@@ -500,27 +512,14 @@
 
      .item-service {
          position: relative;
-         width: 40vw !important;
-         height: 250px !important;
+         width: 90% !important;
+         height: 400px !important;
          background-color: #033C60 !important;
          overflow: hidden;
          transition: background-color 1s ease;
          z-index: 0;
          margin: 5px 5px 40px 5px;
-     }
-
-     .content-item-service {
-         position: relative;
-         z-index: 2;
-         color: #e5e5e5;
-         text-align: center;
-         height: max-content;
-
-         margin-bottom: 10px;
-     }
-
-     .area-title-service h5 {
-         font-size: 1.1em;
+         border: none !important;
      }
 
      .img-item-service {
@@ -528,16 +527,6 @@
          z-index: 1;
          width: 100%;
      }
-
-     .description-service {
-         display: none;
-     }
-
-
-
-
-
-
 
      /* PRODUCT */
 
@@ -919,8 +908,9 @@
          justify-content: center;
          align-items: center;
          width: 100%;
-         height: 100%;
+         height: 150px !important;
          margin: 20px auto;
+         transform: translateY(30px) !important;
      }
 
      .area-logo-institucional img {
@@ -928,7 +918,7 @@
      }
 
      section {
-         height: max-content;
+         height: 750px !important;
          background-image: url('../imgs/background_arrows.png');
          background-size: auto;
          background-position: right;
@@ -938,7 +928,5 @@
          margin: 0px !important;
      }
 
-     .sub-title {
-         text-align: justify;
-     }
+
  }

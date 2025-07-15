@@ -19,6 +19,7 @@
      justify-content: space-evenly;
      width: 100%;
      color: #fff;
+
  }
 
  .area-form-insti {
@@ -96,13 +97,14 @@
 
  .item-service {
      position: relative;
-     width: 220px !important;
-     height: 330px !important;
+     width: 310px !important;
+     height: 400px !important;
      background-color: #033C60 !important;
      overflow: hidden;
      transition: background-color 1s ease;
      z-index: 0;
      margin: 5px 5px 40px 5px;
+     border: none !important;
  }
 
  .img-item-service {
@@ -116,6 +118,10 @@
      height: 80px;
  }
 
+ .area-title-service h5 {
+     font-size: 1.4em;
+ }
+
  .card-body-service {
      display: flex;
      flex-direction: column;
@@ -127,13 +133,14 @@
      z-index: 2;
      color: #e5e5e5;
      text-align: center;
-     height: 150px;
+     height: 200px;
+
  }
 
  .description-service {
-     font-size: .8em;
+     font-size: 1.2em;
      opacity: .8;
-     height: 60px;
+     height: 60%;
      overflow: hidden;
      text-align: center !important;
  }
@@ -147,7 +154,7 @@
  }
 
  .area-desc-informations {
-     border: 1px solid black;
+
      width: 100%;
  }
 
@@ -164,8 +171,11 @@
      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
  }
 
+
+
+
  .item-service:hover .img-item-service {
-     opacity: .5;
+     opacity: .3;
  }
 
  .item-service:hover .invisible-div {
@@ -175,10 +185,11 @@
 
  .item-service:hover .content-item-service {
      animation: fadeIn .2s ease-in forwards;
+     height: max-content;
  }
 
  .item-service:hover .description-service {
-     height: 220px;
+     height: max-content;
      opacity: 1;
      text-align: justify !important;
  }
