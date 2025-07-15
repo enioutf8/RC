@@ -143,6 +143,7 @@
      height: 60%;
      overflow: hidden;
      text-align: center !important;
+    
  }
 
  .invisible-div {
@@ -458,6 +459,17 @@
  .content-depoiments h5 {
      height: 40px;
      text-align: center;
+ }
+
+ .btn-orcamento-service {
+     display: none !important;
+ }
+
+ .item-service:hover .btn-orcamento-service {
+     position: relative;
+     z-index: 5;
+     opacity: 1 !important;
+     display: block !important;
  }
 
  /* HOVERS */
