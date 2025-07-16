@@ -290,8 +290,9 @@
                                 </p>
 
                             </div>
-                            <button
-                                class="btn-orcamento-service   btn btn-lg bg-default text-default"><strong>Solicitar Orçamento</strong></button>
+                            <button onclick="sendOrderWhastapp('Olá, Gostaria de instalar uma fechadura digital.')"
+                                class="btn-orcamento-service   btn btn-lg bg-default text-default"><strong>Solicitar
+                                    Orçamento</strong></button>
                         </div>
 
                     </div>
@@ -312,7 +313,9 @@
                                     controle de segurança moderno e eficiente.
                                 </p>
                             </div>
-                            <button class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar Orçamento</strong></button>
+                            <button onclick="sendOrderWhastapp('Olá, Gostaria de comprar uma fechadura digital.')"
+                                class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar
+                                    Orçamento</strong></button>
 
                         </div>
 
@@ -331,7 +334,9 @@
                                     fechaduras de diversos modelos e níveis de segurança, com técnica.
                                 </p>
                             </div>
-                            <button class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar Orçamento</strong></button>
+                            <button onclick="sendOrderWhastapp('Olá, preciso de ajuda para abrir uma fechadura.')"
+                                class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar
+                                    Orçamento</strong></button>
 
                         </div>
                     </div>
@@ -350,7 +355,10 @@
                                     instalação da nova.
                                 </p>
                             </div>
-                            <button class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar Orçamento</strong></button>
+                            <button
+                                onclick="sendOrderWhastapp('Olá, preciso do serviço de troca e instalação de fechadura comum.')"
+                                class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar
+                                    Orçamento</strong></button>
 
                         </div>
                     </div>
@@ -368,7 +376,10 @@
                                     moradores ou prestadores, podem ter tido acesso às chaves.
                                 </p>
                             </div>
-                            <button class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar Orçamento</strong></button>
+                            <button
+                                onclick="sendOrderWhastapp('Olá, preciso do serviço de troca de segredo em uma fechadura comum.')"
+                                class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar
+                                    Orçamento</strong></button>
 
                         </div>
                     </div>
@@ -386,7 +397,9 @@
                                     precisão e rapidez.
                                 </p>
                             </div>
-                            <button class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar Orçamento</strong></button>
+                            <button onclick="sendOrderWhastapp('Olá, estou precisando fazer cópias de chaves.')"
+                                class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar
+                                    Orçamento</strong></button>
 
                         </div>
                     </div>
@@ -405,7 +418,9 @@
                                     partir de cilindros e fechaduras.
                                 </p>
                             </div>
-                            <button class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar Orçamento</strong></button>
+                            <button onclick="sendOrderWhastapp('Olá, preciso confeccionar chaves.')"
+                                class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar
+                                    Orçamento</strong></button>
 
                         </div>
                     </div>
@@ -424,7 +439,9 @@
                                     modelos, com total sigilo e cuidado.
                                 </p>
                             </div>
-                            <button class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar Orçamento</strong></button>
+                            <button onclick="sendOrderWhastapp('Olá, preciso abrir um Cofre.')"
+                                class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar
+                                    Orçamento</strong></button>
 
 
                         </div>
@@ -446,7 +463,10 @@
                                     eletrônico, oferecendo maior controle e segurança.
                                 </p>
                             </div>
-                            <button class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar Orçamento</strong></button>
+                            <button
+                                onclick="sendOrderWhastapp('Olá, preciso do serviço de instalação de fechaduras com ponto eletrônico.')"
+                                class="btn-orcamento-service btn-lg btn bg-default text-default"><strong>Solicitar
+                                    Orçamento</strong></button>
 
                         </div>
 
@@ -709,6 +729,13 @@
 ${contextProductSelect?.description.replace(/<[^>]*>/g, '')}`;
         const link = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
         window.open(link, '_blank');
+    }
+
+    const sendOrderWhastapp = (message) => {
+        const numero = '5584988745331';
+        const link = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
+        window.open(link, '_blank');
+        
     }
 </script>
 
