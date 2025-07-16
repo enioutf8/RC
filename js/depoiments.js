@@ -41,6 +41,7 @@ depoiments.forEach(item => {
     <div class="item-depoiments">
         <div class="icon-aspas flex-position-center"></div>
         <div class="content-depoiments">
+        <br>
             <div class="text-default">${item?.description}</div>
             <h5 class="text-default">${item?.author}</h5>
         </div>

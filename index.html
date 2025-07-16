@@ -21,7 +21,7 @@
 
         <!-- Navbar -->
         <nav class="navbar navbar-custom navbar-expand-lg">
-            <div class="container">
+            <div class="container ">
 
                 <!-- Botão Toggle (aparece no mobile) -->
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
@@ -30,11 +30,15 @@
                 </button>
 
                 <!-- Logo -->
-                <a class="navbar-brand logo" href="#">
+                <a class="navbar-brand logo " href="#">
                     <img src="./imgs/logo.png" alt="Logo" />
                 </a>
 
-                <div class="hidden-obscure"></div>
+
+                <button class="hidden-toggler  navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Menu Desktop -->
                 <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between">
@@ -79,29 +83,79 @@
         <div class="offcanvas offcanvas-start d-lg-none " tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+
+                <div class="d-flex align-items-center mt-3">
+                    <button class="btn bg-default text-default" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                        type="button"><strong>Whatsapp</strong></button>
+
+                    <div class="icon-default pointer  " data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><i
+                            class="fa-brands fa-instagram"></i></div>
+
+                    <div class="icon-default pointer " data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><i
+                            class="fa-brands fa-facebook"></i></div>
+
+                </div>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+
             <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-start align-items-start flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active " href="#">Home</a>
+
+
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="item-carrocel-officanvas">
+                                <img src="./imgs/banner_mobile/banner_01_mobile.png">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="item-carrocel-officanvas">
+                                <img src="./imgs/banner_mobile/banner_02_mobile.png">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="item-carrocel-officanvas">C</div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <ul class="ul-menu-offcanvas  navbar-nav justify-content-start align-items-start flex-grow-1 pe-3">
+                    <li class=" text-default nav-item item-menu-offcanvas" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-house"></i>
+                        <a class="nav-link active">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Serviços</a>
+                    <li class="text-default nav-item item-menu-offcanvas" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <a class="nav-link " href="#services">Serviços</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Sobre</a>
+                    <li class="text-default nav-item item-menu-offcanvas" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-key"></i>
+                        <a class="nav-link " href="#products">Produtos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Contato</a>
+                    <li class="text-default nav-item item-menu-offcanvas" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-building"></i>
+                        <a class="nav-link " href="#about">Sobre</a>
+                    </li>
+                    <li class="text-default nav-item item-menu-offcanvas" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <a class="nav-link" href="#contact">Contato</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center mt-3">
-                    <div class="icon-default pointer me-2"><i class="fa-brands fa-instagram"></i></div>
-                    <div class="icon-default pointer me-2"><i class="fa-brands fa-facebook"></i></div>
-                    <button class="btn bg-default text-default" type="button"><strong>Whatsapp</strong></button>
-                </div>
+
             </div>
         </div>
 
@@ -735,8 +789,32 @@ ${contextProductSelect?.description.replace(/<[^>]*>/g, '')}`;
         const numero = '5584988745331';
         const link = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
         window.open(link, '_blank');
-        
+
     }
 </script>
+<script>
+    document.querySelectorAll('.navbar-nav .nav-link[href^="#"]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+
+                const offcanvasEl = document.querySelector('#offcanvasNavbar');
+                const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                offcanvasInstance.hide();
+
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }, 300);
+            }
+        });
+    });
+</script>
+
 
 </html>
+
+696.200.64-38

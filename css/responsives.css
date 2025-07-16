@@ -44,10 +44,14 @@
          width: 70%;
      }
 
-
-
+     .hidden-toggler {
+         display: none !important;
+         visibility: hidden !important;
+         opacity: 0 !important;
+     }
 
  }
+
 
 
  /* Estilos para tablets */
@@ -308,6 +312,11 @@
          margin: 0px !important;
      }
 
+     .hidden-toggler {
+         display: block !important;
+         visibility: hidden !important;
+         opacity: 0 !important;
+     }
 
  }
 
@@ -339,10 +348,11 @@
      .logo {
          width: 150px;
          overflow: hidden;
+
      }
 
      .logo img {
-         width: 80%;
+         width: 100%;
      }
 
      .area-form-banner-home {
@@ -928,6 +938,61 @@
          box-sizing: border-box !important;
          padding: 0px !important;
          margin: 0px !important;
+     }
+
+     .hidden-toggler {
+         display: block !important;
+         visibility: hidden !important;
+         opacity: 0 !important;
+     }
+
+
+
+     /* OFFICANVAS */
+     .actived {
+         border-bottom: none !important;
+     }
+
+     .ul-menu-offcanvas {
+         display: flex;
+         justify-content: center;
+         align-content: center;
+     }
+
+     .item-menu-offcanvas {
+         margin: 0 auto;
+         width: 100% !important;
+         margin: 5px;
+         padding: 5px;
+         background-color: rgb(245, 245, 245);
+         font-size: 1.2em;
+         font-weight: 500;
+         display: flex;
+         border-radius: 10px;
+         align-items: center;
+     }
+
+     .item-menu-offcanvas i {
+         margin-left: 20px;
+         margin-right: 10px;
+     }
+
+     .carousel-item {
+         width: 100% !important;
+         height: 200px !important;
+         border-radius: 10px !important;
+         overflow: hidden;
+     }
+
+     .item-carrocel-officanvas {
+         height: 100%;
+         background-color: #188540;
+     }
+
+     .item-carrocel-officanvas img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
      }
 
 
