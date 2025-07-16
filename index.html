@@ -799,15 +799,16 @@ ${contextProductSelect?.description.replace(/<[^>]*>/g, '')}`;
     }
 </script>
 <script>
-    document.querySelectorAll('.navbar-nav .nav-link[href^="#"]').forEach(link => {
-        link.addEventListener('click', function (e) {
+    document.querySelectorAll('.item-menu-offcanvas').forEach(li => {
+        li.addEventListener('click', function (e) {
             e.preventDefault();
+            const link = this.querySelector('a[href^="#"]');
+            if (!link) return;
 
-            const targetId = this.getAttribute('href');
+            const targetId = link.getAttribute('href');
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-
                 const offcanvasEl = document.querySelector('#offcanvasNavbar');
                 const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
                 offcanvasInstance.hide();
@@ -819,6 +820,7 @@ ${contextProductSelect?.description.replace(/<[^>]*>/g, '')}`;
         });
     });
 </script>
+
 
 
 </html>
