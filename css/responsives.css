@@ -1010,6 +1010,7 @@
          width: 100% !important;
          height: 210px !important;
          border-radius: 10px !important;
+         border: none !important;
          overflow: hidden;
      }
 
