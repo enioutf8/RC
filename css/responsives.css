@@ -354,6 +354,43 @@
          display: none !important;
      }
 
+     .carousel-item-mobile {
+         width: 100% !important;
+         height: 210px !important;
+         border-radius: 10px !important;
+         border: none !important;
+         overflow: hidden;
+     }
+
+     .item-carrocel-officanvas img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .ul-menu-offcanvas {
+         display: flex;
+         justify-content: center;
+         align-content: center;
+     }
+
+     .item-menu-offcanvas {
+         margin: 0 auto;
+         width: 100% !important;
+         margin: 5px;
+         padding: 5px;
+         background-color: rgb(245, 245, 245);
+         font-size: 1.2em;
+         font-weight: 500;
+         display: flex;
+         border-radius: 10px;
+         align-items: center;
+     }
+
+     .item-menu-offcanvas i {
+         margin-left: 20px;
+         margin-right: 10px;
+     }
+
  }
 
  /* Estilos para celulares */
